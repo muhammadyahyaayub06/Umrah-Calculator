@@ -1,33 +1,103 @@
 body {
-    font-family: Arial, sans-serif;
+    background-image: url('https://wallpaperaccess.com/full/254367.png'); /* Add your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px); /* Blurs background */
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px; 
+    font-weight: bold; 
+    margin-top: 20px;
+}
+
+
+.hotel_background {
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+    width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f2f2f2;
-  }
-  
-  .counter-container {
-    text-align: center;
-    padding: 20px;
+    margin: auto;
+
+}
+.button:hover {
+    background: linear-gradient(45deg, #ff4b2b, black);
+    transform: scale(1.05);
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
     border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #008080;
     color: white;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
+}
+
+.airline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.button {
+
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, black, #ff4b2b);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+.heading{
+    background-color: #ADD8E6; /* Light blue background */
+    color: black; /* White text color */
+    padding: 10px; /* Add padding for better spacing */
+    font-size: 18px; /* Increase the font size */
+    text-align: center; /* Center align the text */
+    border-radius: 10px; /* Rounded corners for the header */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    letter-spacing: 1px; /* Add some spacing between letters for a more polished look */
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+    
+

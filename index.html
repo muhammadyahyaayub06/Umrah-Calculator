@@ -1,20 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Counter Project</title>
-  <link rel="stylesheet" href="git.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Calculator</title>
+    <link rel="stylesheet" href="git.css">
 </head>
 <body>
-  <div class="counter-container">
-    <h1>Simple Counter</h1>
-    <p id="counter">0</p>
-    <button onclick="increaseCounter()">Increase</button>
-    <button onclick="decreaseCounter()">Decrease</button>
-    <button onclick="resetCounter()">Reset</button>
-  </div>
+    <h2 class = "h2">UMRAH PACKAGE CALCULATOR</h2>
+    <div class="background">
+        <div class="hotel_background">
+            
+            <form id="travelForm">
 
-  <script src="git.js"></script>
+                <!-- First Table: Madinah and Makkah Hotels -->
+                <h3 class ="heading">Hotels and Nights</h3>
+                <table>
+                    <tr>
+                        <th>Madinah Hotel</th>
+                        <th>Number of Nights</th>
+                        <th>Makkah Hotel</th>
+                        <th>Number of Nights</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="Madinah-hotel">
+                                <option value ="">Select Hotel</option>
+                                <option value="anwar">Anwar ul Madinah Movenpick</option>
+                                <option value="pullman">Pullman Zamzam Madinah</option>
+                                <option value="dallah">Dallah Taibah</option>
+                                <option value="elaf">Elaf Taiba</option>
+                                <option value="dar">Dar Al Taqwa</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" id="madinah-nights" value="1">
+                        </td>
+                        <td>
+                            <select id="Makkah-hotel">
+                                <option value ="">Select Hotel</option>
+                                <option value="hyatt">Hyatt Regency</option>
+                                <option value="conrad">Conrad Makkah</option>
+                                <option value="hilton-suites">Hilton Suites</option>
+                                <option value="hilton-convention">Hilton Makkah Convention</option>
+                                <option value="intercontinental">Intercontinental Dar Al Tawhid</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" id="makkah-nights" value="1">
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Second Table: Visa Type -->
+                <h3  class ="heading">Visa Type</h3>
+                <table>
+                    <tr>
+                        <th>Visa Type</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="visa">
+                                <option value ="">Select Visa</option>
+                                <option value="visit">Visit</option>
+                                <option value="work">Work</option>
+                                <option value="umrah">Umrah</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Third Table: Ticket (Airline) -->
+                <h3  class ="heading">Airline Selection</h3>
+                <table>
+                    <tr>
+                        <th>Airline</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="Airline">
+                                <option value ="">Select Airline</option>
+                                <option value="saudia">Saudia</option>
+                                <option value="flynas">Flynas</option>
+                                <option value="emirates">Emirates</option>
+                                <option value="qatar">Qatar</option>
+                                <option value="turkish">Turkish</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Fourth Table: Passenger Details -->
+                <h3  class ="heading">Passenger Details</h3>
+                <table>
+                    <tr>
+                        <th>Adults</th>
+                        <th>Children</th>
+                        <th>Infants</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="adults" value="1">
+                        </td>
+                        <td>
+                            <input type="number" id="child" value="0">
+                        </td>
+                        <td>
+                            <input type="number" id="infants" value="0">
+                        </td>
+                    </tr>
+                </table>
+
+                <br><br>
+                <button type="button" class="button" onclick="calculateResult()">Calculate Total</button>
+            </form>
+        </div>
+
+        <div class="airline">
+            <table>
+                <tr>
+                    <th>Adults Cost</th>
+                    <th>Children Cost</th>
+                    <th>Infants Cost</th>
+                    <th>Grand Total</th>
+                </tr>
+                <tr>
+                    <th>Adult cost per head : 200</th>
+                    <th>Child cost per head : 10</th>
+                    <th>Infants cost per head : 50</th>
+
+                </tr>
+                <tr>
+                    <td id="adultCost">0</td>
+                    <td id="childCost">0</td>
+                    <td id="infantCost">0</td>
+                    <td id="grandTotal">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="git.js"></script>
 </body>
 </html>
