@@ -1,12 +1,11 @@
 # yahya-demo
 This is my first git repository
 <br>
-Author : YAHYA AYUB
+I have made an Umrah package calculator that allows 
 <br>
-The git owner name is Muhammad Yahya Ayub. 
+clients to calculate the total cost of performing Umrah.
 <br>
-He is practicing the git. 
+This calculator is designed to help clients estimate their
 <br>
-He has done his Intermediate from FIC Minhas.
-<br>
-Currently, he is learning development from SmartMoves.
+ expenses before applying for a visa.
+
